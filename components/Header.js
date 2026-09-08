@@ -1,8 +1,66 @@
 // components/Header.js
 import Link from 'next/link';
 import Image from 'next/image';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+
+const closeMobileNav = () => {
+  if (typeof document === 'undefined') return;
+  if (window.innerWidth >= 992) return;
+
+  const nav = document.getElementById('navbarNav');
+  if (!nav || !nav.classList.contains('show') || nav.classList.contains('navbar-closing')) {
+    return;
+  }
+
+  nav.querySelectorAll('.dropdown-menu.show').forEach((menu) => {
+    menu.classList.remove('show');
+  });
+  document.querySelectorAll('.navbar-toggler').forEach((toggler) => {
+    toggler.classList.add('collapsed');
+    toggler.setAttribute('aria-expanded', 'false');
+  });
+
+  nav.style.height = `${nav.scrollHeight}px`;
+  nav.style.overflow = 'hidden';
+  nav.classList.add('navbar-closing');
+  nav.offsetHeight;
+  nav.style.height = '0px';
+
+  const finishClose = (event) => {
+    if (event && event.propertyName && event.propertyName !== 'height') return;
+    if (!nav.classList.contains('navbar-closing')) return;
+    nav.classList.remove('show', 'collapsing', 'navbar-closing');
+    nav.style.height = '';
+    nav.style.overflow = '';
+    nav.removeEventListener('transitionend', finishClose);
+  };
+
+  nav.addEventListener('transitionend', finishClose);
+  window.setTimeout(() => finishClose(), 450);
+};
+
+const handleMobileNavClick = (event) => {
+  const link = event.target.closest('a');
+  if (!link) return;
+  const href = link.getAttribute('href');
+  if (!href || href === '#') return;
+  closeMobileNav();
+};
 
 const Header = () => {
+    const router = useRouter();
+
+    useEffect(() => {
+      const onRouteChange = () => closeMobileNav();
+      router.events.on('routeChangeStart', onRouteChange);
+      router.events.on('routeChangeComplete', onRouteChange);
+      return () => {
+        router.events.off('routeChangeStart', onRouteChange);
+        router.events.off('routeChangeComplete', onRouteChange);
+      };
+    }, [router.events]);
+
     return (
        <>
        <section className="top-section ">
@@ -170,7 +228,11 @@ const Header = () => {
       >
         <span className="navbar-toggler-icon" />
       </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
+      <div
+        className="collapse navbar-collapse"
+        id="navbarNav"
+        onClick={handleMobileNavClick}
+      >
         {/* Right-side Menu */}
         <ul className="navbar-nav ms-auto d-none d-lg-flex pe-4">
           <li className="nav-item dropdown">

@@ -620,6 +620,12 @@ z-index: 1;
     width: 100%;
   }
 
+  #navbarNav.navbar-closing {
+    overflow: hidden !important;
+    opacity: 0;
+    transition: height 0.4s ease, opacity 0.35s ease;
+  }
+
   .nav-item {
     margin: 5px 0;
   }
@@ -1241,12 +1247,27 @@ top: -15px; /* Move the image upwards */
 .evo-hero {
   min-height: 100vh;
   width: 100%;
-  background-image: url("/img/Component 5 (1).svg");
+  position: relative;
+  background-image: url("/img/evo-hero.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+}
+
+.evo-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #000 0%, rgba(102, 102, 102, 0) 87%);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.evo-hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .evo-hero-title {
@@ -2216,6 +2237,7 @@ top: -15px; /* Move the image upwards */
 
 @media only screen and (max-width: 767px) {
   .evo-hero {
+    background-image: url("/img/evo-hero-mobile.webp");
     background-position: 65% center;
     min-height: 100svh;
   }
