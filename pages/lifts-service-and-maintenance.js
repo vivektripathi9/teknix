@@ -10,7 +10,7 @@ export default function Home() {
    const slides = [
     {
       mobile: '/img/mobile/Banner Mobile - Service.png',
-      desktop: '/img/service_.png',
+      desktop: '/img/Service-Page-Banner.webp',
     },
    
   ];

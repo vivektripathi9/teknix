@@ -68,6 +68,14 @@ const Header = () => {
                   Villa Matek
                 </Link>
               </li>
+              <li>
+                <Link
+                  className="dropdown-item"
+                  href="/evo"
+                >
+                  Evo
+                </Link>
+              </li>
             </ul>
           </li>
           <li className="nav-item dropdown">
@@ -272,6 +280,11 @@ const Header = () => {
               <li>
                 <Link className="dropdown-item" href="/villa-matek">
                   Villa Matek
+                </Link>
+              </li>
+              <li>
+                <Link className="dropdown-item" href="/evo">
+                  Evo
                 </Link>
               </li>
             </ul>

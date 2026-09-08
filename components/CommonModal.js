@@ -188,7 +188,7 @@ const CommanModal = () => {
                         By providing Global Collective your contact information,
                         you acknowledge and agree to our{" "}
                         <Link
-                          href="#"
+                          href="/privacy-policy"
                           className="text-white text-decoration-none fw-bold"
                         >
                           Privacy Policy

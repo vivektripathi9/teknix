@@ -14,7 +14,7 @@ export default function Home() {
   const slides = [
     {
       mobile: '/img/mobile/Banner Mobile - Experience Centre.png',
-      desktop: '/img/center.webp',
+      desktop: '/img/Experience-Centre-Banner.webp',
     },
 
   ];

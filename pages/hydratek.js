@@ -11,15 +11,15 @@ export default function Home() {
    const slides = [
     {
       mobile: '/img/mobile/Banner Mobile 1 - Hydratek.png',
-      desktop: '/img/Elevators/H/1.webp',
+      desktop: '/img/slider-image-6.webp',
     },
     {
       mobile: '/img/mobile/Banner Mobile 2 - Hydratek.png',
-      desktop: '/img/Elevators/H/2.webp',
+      desktop: '/img/image-1.webp',
     },
     {
       mobile: '/img/mobile/Banner Mobile 3 - Hydratek.png',
-      desktop: '/img/Elevators/H/3.webp',
+      desktop: '/img/image-5.png',
     },
   ];
     return (
@@ -160,9 +160,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="row mt-md-3">
+      {/* <div className="row mt-md-3">
         <Link href="#" className="text-danger  text-decoration-none font-13 fw-normal letter-spacing text-center">DOWNLOAD HYDRATEK BROCHURE</Link>
-      </div>
+      </div> */}
     </div>
   </section>
 
@@ -233,7 +233,7 @@ export default function Home() {
             </tr>
             <tr>
               <td>
-                <p className="text-md-start text-center mb-0"><strong>Drive </strong>: Frequency controlled permanent magnet synchronous motor based gearless traction machine with dual vented disc brakes</p>
+                <p className="text-md-start text-center mb-0"><strong>Drive </strong>: Frequency controlled permanent magnet synchronous motor based Hydraulic drive system with dual vented disc brakes</p>
               </td>
             </tr>
             <tr>
@@ -283,7 +283,7 @@ export default function Home() {
             </tr>
             <tr>
               <td>
-                <p className="text-md-start text-center mb-0"><strong>Automatic Rescue Device</strong> : Wrong Destination call can be cancelled by double press of destination button</p>
+                <p className="text-md-start text-center mb-0"><strong>Automatic Rescue Device</strong> : Automatic rescue mechanism that swiftly returns the elevator to the nearest floor during power outages.</p>
               </td>
             </tr>
             <tr>

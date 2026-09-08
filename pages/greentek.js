@@ -1,5 +1,6 @@
 // pages/index.js
 import Head from 'next/head';
+import { useState } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import ElevatorCarousel from '../components/ElevatorCarousel';
@@ -8,18 +9,67 @@ import Testimonials from '../components/Testimonials';
 import ConnectForm from '../components/ConnectForm';
 import SimpleCarousel from '../components/SimpleCarousel';
 export default function Home() {
+  
+    const [showModal, setShowModal] = useState(false);
+    const handleBrochureSubmit = async (e) => {
+      e.preventDefault();
+  
+      const formData = {
+        name: e.target.name.value,
+        countryCode: e.target.countryCode.value,
+        mobile: e.target.mobile.value,
+        email: e.target.email.value,
+        source: "Greentek X2 Brochure",
+      };
+  
+      try {
+        const response = await fetch(
+          "https://script.google.com/macros/s/AKfycbxuB1Yg4NHsi5fY77GDoUNCE7_kNdRmlGTdhBN9b6GAxTQBmVwGsUAC7UiTNRzoQwTQsQ/exec",
+          {
+            method: "POST",
+            body: JSON.stringify(formData),
+          },
+        );
+  
+        const result = await response.json();
+  
+        if (result.success) {
+          // Download brochure
+  
+          const link = document.createElement("a");
+  
+          link.href = "/brochure/greentek-brochure.pdf";
+  
+          link.download = "GREENTEK-X2-Brochure.pdf";
+  
+          document.body.appendChild(link);
+  
+          link.click();
+  
+          document.body.removeChild(link);
+  
+          alert("Brochure Download Started");
+  
+          setShowModal(false);
+        }
+      } catch (error) {
+        console.error(error);
+  
+        alert("Something went wrong");
+      }
+    };
    const slides = [
     {
       mobile: '/img/mobile/Banner Mobile 1 - Greentek.png',
-      desktop: '/img/Elevators/G/Banner 1.webp',
+      desktop: '/img/image-3.png',
     },
     {
       mobile: '/img/mobile/Banner Mobile 2 - Greentek.png',
-      desktop: '/img/Elevators/G/Banner 2.webp',
+      desktop: '/img/slider-image-4.webp',
     },
     {
       mobile: '/img/mobile/Banner Mobile 3 - Greentek.png',
-      desktop: '/img/Elevators/G/Banner 3.webp',
+      desktop: '/img/slider-image-3.png',
     },
   ];
     return (
@@ -166,15 +216,23 @@ export default function Home() {
             <div className="col-8 col-md-6 d-flex align-items-center">
               <div>
                 <p className="fw-bold font-15 my-1">Door Height</p>
-                <p className="font-15 mb-0">2100mm- 2400mm</p>
+                <p className="font-15 mb-0">2100mm- 2400mm</p> 
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="row mt-md-3">
+      {/* <div className="row mt-md-3">
         <Link href="#" className="text-danger  text-decoration-none font-13 fw-normal letter-spacing text-center">DOWNLOAD Greentek X2 BROCHURE</Link>
-      </div>
+      </div> */}
+      
+            <button
+              type="button"
+              className="btn btn-link text-danger text-decoration-none font-13 fw-normal letter-spacing text-center w-100"
+              onClick={() => setShowModal(true)}
+            >
+              DOWNLOAD Greentek X2 BROCHURE
+            </button>
     </div>
   </section>
   <section className="section position-relative" id="eleveators">
@@ -536,6 +594,76 @@ export default function Home() {
 
 
 <ConnectForm/>
+
+
+
+        {showModal && (
+          <>
+            <div className="modal fade show" style={{ display: "block" }}>
+              <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h5 className="modal-title text-black">Download Brochure</h5>
+
+                    <button
+                      className="btn-close"
+                      onClick={() => setShowModal(false)}
+                    />
+                  </div>
+
+                  <div className="modal-body">
+                    <form onSubmit={handleBrochureSubmit}>
+                      <input
+                        type="text"
+                        name="name"
+                        className="form-control mb-3"
+                        placeholder="Full Name"
+                        required
+                      />
+
+                      <div className="row">
+                        <div className="col-4">
+                          <select name="countryCode" className="form-select">
+                            <option>+91</option>
+                            <option>+1</option>
+                            <option>+44</option>
+                          </select>
+                        </div>
+
+                        <div className="col-8">
+                          <input
+                            type="tel"
+                            name="mobile"
+                            className="form-control"
+                            placeholder="Mobile Number"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <input
+                        type="email"
+                        name="email"
+                        className="form-control mt-3"
+                        placeholder="E`mail Address"
+                        required
+                      />
+
+                      <button
+                        type="submit"
+                        className="btn btn-danger w-100 mt-3"
+                      >
+                        Submit & Download
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="modal-backdrop fade show"></div>
+          </>
+        )}
 </>
 
 

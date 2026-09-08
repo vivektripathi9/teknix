@@ -161,7 +161,7 @@ const ConnectForm = () => {
           </div>
           <div className="col-md-6">
             <Image
-              src="/img/lets connect with us.png"
+              src="/img/contact-section.webp"
               alt="teknix"
               width={956}
               height={587}

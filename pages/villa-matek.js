@@ -11,15 +11,15 @@ export default function Home() {
    const slides = [
     {
       mobile: '/img/mobile/Banner Mobile 1 - Villa Matek.png',
-      desktop: '/img/Banner 1 - Villa Matek.png',
+      desktop: '/img/image-5.png',
     },
     {
       mobile: '/img/mobile/Banner Mobile 2 - Villa Matek.png',
-      desktop: '/img/Banner 2 - Villa Matek.png',
+      desktop: '/img/slider-image-4.webp',
     },
     {
       mobile: '/img/mobile/Banner Mobile 3 - Villa Matek.png',
-      desktop: '/img/Banner 3 - Villa Matek (1).png',
+      desktop: '/img/slider-image-6.webp',
     },
   ];
     return (
@@ -165,9 +165,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="row mt-md-3">
+      {/* <div className="row mt-md-3">
         <Link href="#" className="text-danger  text-decoration-none font-13 fw-normal letter-spacing text-center">DOWNLOAD VILLA MATEK BROCHURE</Link>
-      </div>
+      </div> */}
     </div>
   </section>
   <section className="section position-relative" id="eleveators">
@@ -294,7 +294,7 @@ export default function Home() {
               </tr>
               <tr>
                 <td>
-                  <p className="text-md-start text-center mb-0"><strong>Automatic Rescue Device</strong> : Wrong Destination call can be cancelled by double press of destination button</p>
+                  <p className="text-md-start text-center mb-0"><strong>Automatic Rescue Device</strong> : Automatic rescue mechanism that swiftly returns the elevator to the nearest floor during power outages.</p>
                 </td>
               </tr>
               <tr>

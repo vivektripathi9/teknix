@@ -10,7 +10,7 @@ export default function Blog() {
  const slides = [
     {
       mobile: '/img/mobile/Banner Mobile - Blogs.png',
-      desktop: '/img/Blog.webp',
+      desktop: '/img/blogs.webp',
     }
    
   ];

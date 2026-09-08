@@ -53,6 +53,7 @@ p {
   left: 0;
   right: 0;
   width: 100% !important;
+    background-color: #000000bd;
 }
 
 .navbar-brand img {
@@ -294,7 +295,7 @@ h6 {
 }
 
 .font-28 {
-  font-size: 28px !important;
+  font-size: 20px !important;
 }
 
 .font-32 {
@@ -310,7 +311,7 @@ h6 {
 }
 
 .font-44 {
-  font-size: 44px;
+  font-size: 34px;
   line-height: 1.25;
 }
 
@@ -319,9 +320,11 @@ h6 {
   line-height: 1.25;
 }
 
-.text-light {
+/* .text-light {
   color: #e4dfd8 !important;
-}
+  padding: 0 15rem;
+  display: flex;
+} */
 
 .navbar {
   z-index: 99;
@@ -371,7 +374,7 @@ h6 {
 .home-about-heading h2 {
   /*font-family: 'SaolDisplay-Regular';*/
   font-family: "DM Sans", sans-serif;
-  font-size: 82px;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 1.25;
   color: #fff;
@@ -418,16 +421,16 @@ label {
 .experience-text p,
 .other-heading {
   font-family: "DM Sans", sans-serif;
-  font-size: 82px;
+  font-size: 34px;
   font-weight: 400;
   line-height: 1;
   color: #fff;
-  padding: 20px 0;
+  padding: 12px 0;
 }
 
 .other-heading2 {
   font-family: "DM Sans", sans-serif;
-  font-size: 3.2vw;
+    font-size: 2rem;
   font-weight: 300;
   line-height: 1.25;
   color: #fff;
@@ -866,11 +869,11 @@ z-index: 1;
 }
 
 #experience-sec {
-  background-image: url("/img/experience.png") !important;
-  background-position: center !important;
+  background-image: url("/img/experience.webp") !important;
+  /* background-position: center !important; */
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  height: 100vh !important;
+  height: 80vh !important;
 }
 
 @media (max-width: 767.98px) {
@@ -1229,4 +1232,1033 @@ padding:15px 0;
 
 .thumbnail-slider img:hover {
 top: -15px; /* Move the image upwards */
+}
+
+.evo-page {
+  background: #000;
+}
+
+.evo-hero {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("/img/Component 5 (1).svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.evo-hero-title {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: none;
+  font-variation-settings: "opsz" 18;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 80px;
+  line-height: 85px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.evo-advantage {
+  --evo-scale: min(1, 100vw / 1920px);
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: min(745px, calc(100vw * 745 / 1920));
+  margin: 0 auto;
+  overflow: hidden;
+  background: #000;
+}
+
+.evo-advantage-frame {
+  position: relative;
+  width: 1920px;
+  height: 745px;
+  transform: scale(var(--evo-scale));
+  transform-origin: top left;
+}
+
+.evo-advantage-copy {
+  position: absolute;
+  top: 220px;
+  left: 120px;
+  width: 620px;
+}
+
+.evo-advantage-eyebrow {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ffeecc 4.29%, #ad9515 97.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 18px;
+}
+
+.evo-advantage-heading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.15;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 28px;
+}
+
+.evo-advantage-body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 520px;
+}
+
+.evo-advantage-stats {
+  position: absolute;
+  top: 150px;
+  left: 820px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.evo-stat-value {
+  font-family: "DM Sans", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, #ffeecc 4.29%, #ad9515 97.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.evo-stat-value span {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #ffeecc 4.29%, #ad9515 97.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.evo-stat-label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.evo-advantage-art {
+  position: absolute;
+  top: 100px;
+  left: 1303px;
+  width: 438px;
+  height: 544px;
+  object-fit: contain;
+  display: block;
+}
+
+.evo-home {
+  --evo-scale: min(1, 100vw / 1920px);
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: min(745px, calc(100vw * 745 / 1920));
+  margin: 0 auto;
+  overflow: hidden;
+  background: #000;
+}
+
+.evo-home-frame {
+  position: relative;
+  width: 1920px;
+  height: 745px;
+  transform: scale(var(--evo-scale));
+  transform-origin: top left;
+}
+
+.evo-home-media {
+  position: absolute;
+  top: 47px;
+  left: 82px;
+  width: 920px;
+  height: 590px;
+  overflow: hidden;
+}
+
+.evo-home-media img {
+  width: 920px;
+  height: 590px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.evo-home-copy {
+  position: absolute;
+  top: 47px;
+  left: 1148px;
+  width: 680px;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+.evo-home-heading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin: 0 0 22px;
+}
+
+.evo-home-body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 520px;
+  margin-bottom: 80px;
+}
+
+.evo-home-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.evo-home-feature-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.evo-home-feature-title span {
+  background: linear-gradient(90deg, #ffeecc 4.29%, #ad9515 97.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 500;
+}
+
+.evo-home-feature-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.evo-fit {
+  width: 100%;
+  background: #e1d8ce;
+  padding: 120px 60px 110px;
+}
+
+.evo-fit * {
+  color: #111;
+}
+
+.evo-fit-heading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin: 0 auto 72px;
+}
+
+.evo-fit-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 36px 28px;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.evo-fit-option {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.evo-fit-option-reverse {
+  flex-direction: row-reverse;
+}
+
+.evo-fit-option img {
+  width: 280px;
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+}
+
+.evo-fit-copy {
+  max-width: 320px;
+}
+
+.evo-fit-copy h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+  color: #111;
+}
+
+.evo-fit-copy p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.evo-fit-available {
+  margin-top: 16px !important;
+}
+
+.evo-fit-copy ul {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 10px 0 0;
+}
+
+.evo-fit-copy li {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  line-height: 1.7;
+  color: #111;
+}
+
+.evo-fit-or {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #efe8df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #111;
+  flex-shrink: 0;
+}
+
+.evo-need {
+  width: 100%;
+  background: #e1d8ce;
+  padding: 80px 60px 90px;
+}
+
+.evo-need * {
+  color: #111;
+}
+
+.evo-need-inner {
+  max-width: 1680px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: center;
+  gap: 16px 12px;
+}
+
+.evo-need-heading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 60px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin: 0;
+  color: #111;
+  vertical-align: middle;
+}
+
+.evo-need-diagram {
+  min-width: 0;
+}
+
+.evo-need-diagram img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.evo-safety {
+  width: 100%;
+  background: #000;
+  padding: 80px 24px 100px;
+}
+
+.evo-safety-heading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 28px;
+}
+
+.evo-safety-stage {
+  position: relative;
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.evo-safety-stage img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.evo-safety-item {
+  position: absolute;
+  width: 24%;
+  max-width: none;
+}
+
+.evo-safety-item h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #d4b483;
+  margin: 0 0 6px;
+  transition: color 0.25s ease, letter-spacing 0.25s ease;
+}
+
+.evo-safety-item p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #fff;
+  margin: 0;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+.evo-safety-item {
+  cursor: default;
+  transition: transform 0.25s ease;
+}
+
+.evo-safety-item:hover h3 {
+  color: #ffeecc;
+  letter-spacing: 1px;
+}
+
+.evo-safety-item:hover p {
+  color: #fff;
+  opacity: 0.85;
+}
+
+.evo-safety-item-l1,
+.evo-safety-item-l2,
+.evo-safety-item-l3 {
+  left: 8%;
+  text-align: right;
+}
+
+.evo-safety-item-r1,
+.evo-safety-item-r2,
+.evo-safety-item-r3 {
+  right: 4%;
+  text-align: left;
+}
+
+.evo-safety-item-l1 { top: 34.8%; transform: translateY(-18px); }
+.evo-safety-item-l2 { top: 55.4%; transform: translateY(-18px); }
+.evo-safety-item-l3 { top: 75.6%; transform: translateY(-18px); }
+.evo-safety-item-r1 { top: 34.8%; transform: translateY(-18px); }
+.evo-safety-item-r2 { top: 59%; transform: translateY(-18px); }
+.evo-safety-item-r3 { top: 81.2%; transform: translateY(-18px); }
+
+.evo-safety-heading {
+  animation: evoSafetyFade 0.8s ease both;
+}
+
+.evo-safety-item {
+  opacity: 0;
+}
+
+@keyframes evoSafetyFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes evoSafetyInLeft {
+  from {
+    opacity: 0;
+    transform: translateY(-18px) translateX(-28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-18px) translateX(0);
+  }
+}
+
+@keyframes evoSafetyInRight {
+  from {
+    opacity: 0;
+    transform: translateY(-18px) translateX(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-18px) translateX(0);
+  }
+}
+
+@media (min-width: 992px) {
+  .evo-safety-item-l1,
+  .evo-safety-item-l2,
+  .evo-safety-item-l3 {
+    animation: evoSafetyInLeft 0.75s ease forwards;
+  }
+
+  .evo-safety-item-r1,
+  .evo-safety-item-r2,
+  .evo-safety-item-r3 {
+    animation: evoSafetyInRight 0.75s ease forwards;
+  }
+
+  .evo-safety-item-l1,
+  .evo-safety-item-r1 {
+    animation-delay: 0.15s;
+  }
+
+  .evo-safety-item-l2,
+  .evo-safety-item-r2 {
+    animation-delay: 0.35s;
+  }
+
+  .evo-safety-item-l3,
+  .evo-safety-item-r3 {
+    animation-delay: 0.55s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .evo-safety-heading,
+  .evo-safety-item {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
+
+.evo-style {
+  width: 100%;
+  background: #000;
+  padding: 80px 60px 100px;
+}
+
+.evo-style-eyebrow {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #9a9a9a;
+  margin: 0 0 12px;
+}
+
+.evo-style-eyebrow span {
+  background: linear-gradient(90deg, #ffeecc 4.29%, #ad9515 97.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.evo-style-heading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 64px;
+}
+
+.evo-style-row {
+  display: grid;
+  grid-template-columns: minmax(140px, 200px) auto;
+  align-items: center;
+  justify-content: center;
+  gap: 48px 56px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.evo-style-preview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.evo-style-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.evo-style-list button {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #5c5c5c;
+  text-align: left;
+  cursor: pointer;
+}
+
+.evo-style-list button.is-active {
+  color: #fff;
+}
+
+.evo-style-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.evo-style-nav button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #5a5a5a;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.evo-style-nav svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: #ad9515;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.evo-style-media {
+  justify-self: end;
+  width: 610px;
+  height: 414px;
+  max-width: 100%;
+}
+
+.evo-style-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.evo-style-photo {
+  animation: evoStyleFade 0.45s ease;
+}
+
+.evo-style-list button {
+  transition: color 0.25s ease;
+}
+
+.evo-style-list button:hover {
+  color: #fff;
+}
+
+.evo-style-nav button {
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.evo-style-nav button:hover {
+  border-color: #ad9515;
+  transform: scale(1.08);
+}
+
+.evo-home-features li {
+  transition: transform 0.25s ease;
+}
+
+.evo-home-features li:hover {
+  transform: translateX(6px);
+}
+
+.evo-fit-option img {
+  transition: transform 0.4s ease;
+}
+
+.evo-fit-option:hover img {
+  transform: scale(1.03);
+}
+
+.evo-stat {
+  transition: transform 0.25s ease;
+}
+
+.evo-stat:hover {
+  transform: translateY(-4px);
+}
+
+@keyframes evoStyleFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .evo-style-photo,
+  .evo-fit-option img,
+  .evo-home-features li,
+  .evo-stat,
+  .evo-style-nav button,
+  .evo-style-list button {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .evo-hero-title {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .evo-advantage {
+    height: auto;
+    overflow: visible;
+    padding: 72px 20px 40px;
+  }
+
+  .evo-advantage-frame {
+    width: 100%;
+    height: auto;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .evo-advantage-copy,
+  .evo-advantage-stats {
+    position: static;
+    width: 100%;
+    top: auto;
+    left: auto;
+  }
+
+  .evo-advantage-heading {
+    font-size: 32px;
+  }
+
+  .evo-advantage-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .evo-stat-value {
+    font-size: 32px;
+  }
+
+  .evo-advantage-art {
+    position: static;
+    width: min(438px, 100%);
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .evo-home {
+    height: auto;
+    overflow: visible;
+    padding: 40px 20px;
+  }
+
+  .evo-home-frame {
+    width: 100%;
+    height: auto;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .evo-home-media {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-width: 920px;
+    aspect-ratio: 920 / 590;
+    margin: 0 auto;
+  }
+
+  .evo-home-media img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .evo-home-copy {
+    position: static;
+    width: 100%;
+    height: auto;
+    top: auto;
+    left: auto;
+    padding: 8px 0 24px;
+  }
+
+  .evo-home-heading {
+    font-size: 32px;
+  }
+
+  .evo-fit {
+    padding: 64px 20px 72px;
+  }
+
+  .evo-fit-heading {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .evo-fit-row {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 36px;
+  }
+
+  .evo-fit-option,
+  .evo-fit-option-reverse {
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .evo-fit-option img {
+    width: min(280px, 70%);
+    margin: 0 auto;
+  }
+
+  .evo-fit-copy {
+    max-width: none;
+  }
+
+  .evo-need {
+    padding: 56px 20px 64px;
+  }
+
+  .evo-need-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .evo-need-heading {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .evo-safety {
+    padding: 48px 20px 56px;
+  }
+
+  .evo-safety-heading {
+    font-size: clamp(20px, 6vw, 26px);
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+
+  .evo-safety-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .evo-safety-stage img {
+    width: min(100%, 420px);
+    margin: 0 auto 28px;
+  }
+
+  .evo-safety-item {
+    position: static;
+    width: 100%;
+    max-width: none;
+    transform: none !important;
+    text-align: left !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    padding: 14px 0 14px 16px;
+    border-left: 2px solid #d4b483;
+    margin: 0 0 12px;
+    animation: evoSafetyFade 0.6s ease forwards;
+  }
+
+  .evo-safety-item-l1 { animation-delay: 0.08s; }
+  .evo-safety-item-l2 { animation-delay: 0.16s; }
+  .evo-safety-item-l3 { animation-delay: 0.24s; }
+  .evo-safety-item-r1 { animation-delay: 0.32s; }
+  .evo-safety-item-r2 { animation-delay: 0.4s; }
+  .evo-safety-item-r3 { animation-delay: 0.48s; }
+
+  .evo-safety-item h3 {
+    font-size: 13px;
+    letter-spacing: 0.7px;
+    line-height: 1.35;
+    margin-bottom: 4px;
+  }
+
+  .evo-safety-item p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.88);
+  }
+
+  .evo-style {
+    padding: 56px 20px 64px;
+  }
+
+  .evo-style-heading {
+    font-size: 28px;
+    margin-bottom: 36px;
+  }
+
+  .evo-style-row {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    justify-content: stretch;
+  }
+
+  .evo-style-preview {
+    grid-row: 1;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .evo-style-media {
+    justify-self: center;
+    width: min(610px, calc(100% - 54px));
+    height: auto;
+    aspect-ratio: 610 / 414;
+  }
+
+  .evo-style-list {
+    grid-row: 2;
+  }
+
+  .evo-style-list button {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .evo-hero {
+    background-position: 65% center;
+    min-height: 100svh;
+  }
+
+  .evo-hero-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .evo-advantage-stats {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .evo-safety {
+    padding: 40px 18px 48px;
+  }
+
+  .evo-safety-heading {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .evo-safety-stage img {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .evo-safety-item {
+    padding: 12px 0 12px 14px;
+    margin-bottom: 10px;
+  }
+
+  .evo-style {
+    padding: 40px 18px 48px;
+  }
+
+  .evo-style-heading {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+
+  .evo-style-list button {
+    font-size: 22px;
+  }
 }

@@ -11,7 +11,7 @@ export default function Home() {
    const slides = [
     {
       mobile: '/img/mobile/Banner Mobile 1 - Vertix.png',
-      desktop: '/img/Elevators/v/Banner 1.webp',
+      desktop: '/img/image-2.png',
     },
     {
       mobile: '/img/mobile/Banner Mobile 2 - Vertix.png',
@@ -19,7 +19,7 @@ export default function Home() {
     },
     {
       mobile: '/img/mobile/Banner Mobile 3 - Vertix.png',
-      desktop: '/img/Elevators/v/Banner 3.webp',
+      desktop: '/img/slider-image-2.webp',
     },
   ];
     return (
@@ -171,9 +171,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="row mt-md-3">
+      {/* <div className="row mt-md-3">
         <Link href="#" className="text-danger  text-decoration-none font-13 fw-normal letter-spacing text-center">DOWNLOAD VERTIX BROCHURE</Link>
-      </div>
+      </div> */}
     </div>
   </section>
 

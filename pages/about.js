@@ -24,9 +24,9 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>teknix</title>
-                <meta name="description" content="teknix" />
-                <meta name="keywords" content="teknix" />
+                <title>About Teknix Elevators | Leading Elevator Company in India</title>
+                <meta name="description" content="Learn about Teknix Elevators, a leading elevator Manufacturers in India offering advanced elevator solutions, manufacturing, installation, modernization and maintenance" />
+                <meta name="keywords" content="Learn about Teknix Elevators, a leading elevator Manufacturers in India offering advanced elevator solutions, manufacturing, installation, modernization and maintenance" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://www.teknixelevators.com/about/" />

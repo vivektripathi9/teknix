@@ -64,7 +64,7 @@ const domain = process.env.NEXT_PUBLIC_SITE_URL || (typeof window !== "undefined
         <div className="carousel-inner">
           <div className="carousel-item active">
             <Image
-              src="/img/Blog.webp"
+              src="/img/blogs.webp"
               className="d-block w-100"
               alt="Slide 1"
               width={1920}
@@ -101,7 +101,7 @@ const domain = process.env.NEXT_PUBLIC_SITE_URL || (typeof window !== "undefined
       <section className="section">
         <div className="container">
           <div className="row">
-            <div class="col-9 px-3 px-md-5">
+            <div class="col-12 col-lg-9 px-3 px-md-5">
               <div class="gallery-item">
                 <Image
                   src={`/img/blogs_image/${post.image}`}

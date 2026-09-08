@@ -10,7 +10,7 @@ export default function Home() {
    const slides = [
     {
       mobile: '/img/mobile/Banner Mobile 1 - Tesc 50.png',
-      desktop: '/img/Esculators/50/1.webp',
+      desktop: '/img/Escalator-2-banner.webp',
     },
     {
     mobile: '/img/mobile/Banner Mobile 2 - Tesc 50.png',

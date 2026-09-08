@@ -11,7 +11,7 @@ export default function GalleryPage() {
     const myslides = [
         {
             mobile: '/img/mobile/Banner Mobile - Contact.png',
-            desktop: '/img/gallery.webp',
+            desktop: '/img/Gallery-banner.webp',
         }
 
     ];

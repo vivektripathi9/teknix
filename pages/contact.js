@@ -14,7 +14,7 @@ export default function Home() {
    const slides = [
     {
       mobile: '/img/mobile/Banner Mobile - Contact.png',
-      desktop: '/img/contact.webp',
+      desktop: '/img/contact-bg.webp',
     }
    
   ];

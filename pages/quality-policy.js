@@ -12,7 +12,7 @@ export default function Home() {
    const slides = [
     {
       mobile: '/img/mobile/Banner Mobile - Quality Policy.png',
-      desktop: '/img/About us/Quality.webp',
+      desktop: '/img/Quality-Policy-banner.webp',
     },
    
   ];
