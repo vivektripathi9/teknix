@@ -78,6 +78,11 @@ const Header = () => {
               </li>
             </ul>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link text-white" href="/evo">
+              EVO
+            </Link>
+          </li>
           <li className="nav-item dropdown">
             <Link
               className="nav-link dropdown-toggle text-white"
@@ -288,6 +293,11 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link text-white" href="/evo">
+              EVO
+            </Link>
           </li>
           <li className="nav-item dropdown">
             <Link
